@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    position: relative;
+}
+
+.game-title {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.screen {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tip {
+    font-size: 18px;
+    color: #ccc;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.action-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.5);
+}
+
+#pong {
+    background-color: #000;
+    border: 4px solid #444;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.score-board {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.score-label {
+    padding: 10px 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+}
+
+#player-score, #computer-score {
+    font-size: 28px;
+    color: #4CAF50;
+}
+
+.result-message {
+    font-size: 48px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    animation: pulse 1.5s infinite;
+}
+
+.win {
+    color: #4CAF50;
+}
+
+.lose {
+    color: #f44336;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}

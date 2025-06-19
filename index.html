@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">Pong Game</h1>
+        
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="screen">
+            <h2>Welcome to Pong!</h2>
+            <p class="tip">Use your mouse or Up/Down arrow keys to control the left paddle</p>
+            <p class="tip">First to 10 points wins!</p>
+            <button id="start-btn" class="action-btn">Start Game</button>
+        </div>
+        
+        <!-- Game Screen -->
+        <div id="game-screen" class="screen hidden">
+            <div class="score-board">
+                <div class="score-label">Player: <span id="player-score">0</span></div>
+                <div class="score-label">Computer: <span id="computer-score">0</span></div>
+            </div>
+            <canvas id="pong" width="800" height="400"></canvas>
+        </div>
+        
+        <!-- Win Screen -->
+        <div id="win-screen" class="screen hidden">
+            <h2 class="result-message win">You win! :)</h2>
+            <button id="play-again-win" class="action-btn">Play Again</button>
+        </div>
+        
+        <!-- Lose Screen -->
+        <div id="lose-screen" class="screen hidden">
+            <h2 class="result-message lose">You lose! :C</h2>
+            <button id="play-again-lose" class="action-btn">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
