@@ -2,7 +2,7 @@
 
 A modern implementation of the classic Pong arcade game built with HTML5, CSS3, and vanilla JavaScript.
 
-![Pong Game Screenshot](https://via.placeholder.com/800x400/000000/FFFFFF?text=Pong+Game)
+![Pong Game Screenshot](PingPongGame.png)
 
 ## Description
 
